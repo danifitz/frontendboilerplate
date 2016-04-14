@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/webpack/bin/webpack.js src -d lib --watch"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js -d --hot --inline --progress --colors --port 3000",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --progress --colors"
   },
   "repository": {
     "type": "git",
